@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
 import { cn } from '@/app/lib/utils'
 import Link from 'next/link'
-import {usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 type NavItemProps = {
   label: string
@@ -16,10 +16,10 @@ export const NavItem = ({ label, href }: NavItemProps) => {
   return (
     <Link
       href={href}
-      className={
-        cn("text-gray-800 flex items-center gap-2 font-mono font-medium", 
-         isActive && "text-orange-800")
-      }
+      className={cn(
+        'text-gray-800 flex items-center gap-2 font-mono font-medium',
+        isActive && 'text-orange-700',
+      )}
     >
       <span className="text-emerald-700">#</span>
       {label}
