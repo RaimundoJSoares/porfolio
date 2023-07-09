@@ -35,6 +35,7 @@ export default function HeroSection() {
                 height={40}
                 src="/images/github.svg"
                 alt="Github"
+                className="anima"
               />
             </Link>
             <a
@@ -50,16 +51,17 @@ export default function HeroSection() {
               />
             </a>
           </div>
-          <div className="flex flex-wrap gap-x-2 gap-y-3 mt-10">
-            {Array.from({ length: 12 }).map((_, index) => (
-              <SkillsPlay name="Next js" key="" />
-            ))}
-          </div>
+
           {/* <div className="text-green-500">
             using React JS, Next JS, TypeScript, JavaScript, API Rest, Node JS ,
             fastify ,express, PostgreSQL, UI/UX (figma), Context API, clean
             code.
           </div> */}
+        </div>
+        <div className="flex flex-wrap gap-x-2 gap-y-3 mt-24 lg:max-w-full">
+          {Array.from({ length: 12 }).map((_, index) => (
+            <SkillsPlay name="Next js" key="" />
+          ))}
         </div>
       </div>
     </section>
