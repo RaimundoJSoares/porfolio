@@ -10,7 +10,7 @@ export default function HeroSection() {
           <p className=" text-lg sm:text-xl md:text-2xl text-zinc-600 flex items-center gap-5 ">
             HELLO 👋 I AM RAIMUNDO SOARES
           </p>
-          <h1 className="text-6xl md:text-9xl sm:text-7xl text-zinc-800">
+          <h1 className="text-6xl md:text-9xl sm:text-7xl text-zinc-800 ">
             FRONTEND DEVELOPER
           </h1>
           <p className=" text-sm sm:text-base md:text-lg sm:ml-20 md:ml-60 text-zinc-600 mt-3 sm:mt-1 ">
