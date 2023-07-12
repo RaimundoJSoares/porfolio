@@ -4,15 +4,17 @@ import SkillsPlay from '../../skills'
 
 export default function HeroSection() {
   return (
-    <section className=" h-screen flex items-center justify-center">
+    <section className=" h-screen flex items-center justify-center ml-[25px] sm:ml-[100px] md:ml-[200px]">
       <div>
-        <div className="font-extrabold max-w-[400px] sm:max-w-[450px] md:max-w-[700px] ">
-          <p className=" text-lg sm:text-xl md:text-2xl text-zinc-600 flex items-center gap-5 ">
+        <div className="font-extrabold max-w-[400px] sm:max-w-[450px] md:max-w-[700px]  ">
+          <p className=" text-lg sm:text-xl md:text-2xl text-zinc-600 flex items-center ">
             HELLO 👋 I AM RAIMUNDO SOARES
           </p>
-          <h1 className="text-6xl md:text-9xl sm:text-7xl text-zinc-800 ">
-            FRONTEND DEVELOPER
-          </h1>
+          <div className="flex items-center justify-center">
+            <h1 className="text-6xl md:text-9xl sm:text-7xl text-zinc-800 ">
+              FRONTEND DEVELOPER
+            </h1>
+          </div>
           <p className=" text-sm sm:text-base md:text-lg sm:ml-20 md:ml-60 text-zinc-600 mt-3 sm:mt-1 ">
             I am a Frontend developer with +3 years working with Freelancer
           </p>
