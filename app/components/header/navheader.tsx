@@ -25,25 +25,25 @@ export default function NavHeader() {
 
   return (
     <div
-      className={`nav-header  m-2 scroll-smooth md:scroll-auto mb-10 ${
+      className={`nav-header  scroll-smooth md:scroll-auto mb-14 font-semibold text-lg${
         scrolled
           ? ' z-10 md:scroll-auto scroll-smooth fixed  font-semibold w-full bg-gray-300 bg-opacity-70 mt-0 -ml-0.5 flex items-center justify-between h-24 backdrop-blur-sm shadow-xl shadow-gray-400 round-xl'
           : ''
       }`}
     >
-      <div className="nav-header-logo m-2 ml-10 ">
+      <div className="nav-header-logo ml-4 sm:ml-10 flex justify-start">
         <Link href="/">
           <Image
             alt=""
             src="/images/logo.svg"
             width={58}
             height={50}
-            className="rounded-full flex items-center justify-center"
+            className="flex space-x-4 mr-5 sm:mr-10 gap-3 sm:gap-5 mb:10"
           />
         </Link>
       </div>
-      <nav className="flex justify-end">
-        <ul className="flex space-x-4 mr-10 gap-5">
+      <nav className="flex justify-end ">
+        <ul className="flex space-x-4 mr-5 sm:mr-10 gap-3 sm:gap-5 mb:10">
           <li>
             <Link href="/#home">Home</Link>
           </li>

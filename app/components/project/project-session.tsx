@@ -3,7 +3,10 @@ import Link from 'next/link'
 
 const ProjectSection = () => {
   return (
-    <div className="items-center justify-center  mb-20  sm:grid grid-cols-2 gap-6 0 rounded-lg relative  ">
+    <div
+      id="projects"
+      className="items-center justify-center  mb-20  sm:grid grid-cols-2 gap-6 0 rounded-lg relative  "
+    >
       <div
         className="relative  flex items center justify-center h-auto mb-5
          shadow-xl shadow-gray-400 round-xl p-4 group hover:bg-gray-950 rounded-lg "
@@ -23,6 +26,7 @@ const ProjectSection = () => {
             href="https://pearsonhardman.vercel.app"
             className="bg-green-500 bg-opacity-50 text-white text-lg px-4 py-2 rounded-lg hidden hover:bg-opacity-90 group-hover:block delay-200 "
             target="_blank"
+            about="person hardman"
           >
             Visualize
           </Link>
