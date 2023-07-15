@@ -17,10 +17,7 @@ const plexMono = IBM_Plex_Mono({
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${plexMono.variable}`}>
-      <body>
-        <Header />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

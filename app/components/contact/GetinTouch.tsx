@@ -2,7 +2,7 @@ export default function GetInTouch() {
   return (
     <form id="contact" className="flex items-center justify-center ">
       <div
-        className="flex items-center justify-center w-[900px] h-[620px] 
+        className="flex items-center justify-center sm:w-[900px] sm:h-[620px] 
        bg-gray-200 mb-24 shadow-xl rounded-3xl  "
       >
         <div className="max-w-[400px] sm:max-w-[450px] md:max-w-[700px]">
