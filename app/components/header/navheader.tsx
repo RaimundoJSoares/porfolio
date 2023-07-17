@@ -44,13 +44,13 @@ export default function NavHeader() {
       </div>
       <nav className="flex justify-end ">
         <ul className="flex space-x-4 mr-5 sm:mr-10 gap-3 sm:gap-5 mb:10 ">
-          <li>
+          <li className="hover:text-gray-600 ">
             <Link href="/#home">Home</Link>
           </li>
-          <li>
+          <li className="hover:text-gray-600 ">
             <Link href="/#projects">Projects</Link>
           </li>
-          <li>
+          <li className="hover:text-gray-600 ">
             <Link href="/#contact">Contact</Link>
           </li>
         </ul>

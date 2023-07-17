@@ -3,27 +3,27 @@ import Link from 'next/link'
 
 export default function AboutME() {
   return (
-    <div className=" bg-slate-200 max-w-[400px] h-[620px] shadow-xl rounded-3xl">
-      <div className="flex items-center justify-center flex-wrap ">
+    <div className="  bg-slate-200 w-[400px] h-[620px] shadow-xl rounded-3xl flex items-center justify-center">
+      <div className=" col-span-4  ">
         <div>
           <Image
-            className="mt-5"
+            className=" rounded-md "
             alt=""
             src="/images/pcimage.jpg"
             width={300}
             height={300}
           />
         </div>
-        <div className="flex items-center justify-center flex-wrap">
-          <h1 className="font-bold text-2xl  leading-10">
+        <div className=" ">
+          <h1 className="font-bold text-2xl  leading-10 ">
             Raimundo Junior Soares
           </h1>
-          <span className=" leading-5 ">Front-end Developer</span>
-          <div className="mt-6 text-sm text-center text">
+          <span className=" leading-5  ">Front-end Developer</span>
+          <p className="mt-6 text-sm w-[300px]">
             Working since 2019 as a developer, I am available for full-time or
-            freelance positions, as a Front-end or FullStack developer.
-            <br /> Contact me and lets talk.
-          </div>
+            freelance positions, as a Front-end or FullStack. Contact me and
+            lets talk.
+          </p>
         </div>
         <div className="mt-28 ">
           <span className="flex items-center justify-center font-semibold">
