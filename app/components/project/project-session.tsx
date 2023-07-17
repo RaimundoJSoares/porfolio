@@ -8,7 +8,7 @@ const ProjectSection = () => {
       className=" mb-20  sm:grid grid-cols-2 gap-6 0 rounded-lg relative m-16 "
     >
       <div
-        className="relative  mb-5 h-[350px]
+        className="relative  mb-5 h-[200px] w-[320px] sm:w-auto sm:h-[350px]
          shadow-xl shadow-gray-400 round-xl p-4 group hover:bg-gray-950 rounded-lg "
       >
         <div className="group-hover:blur-sm">
@@ -32,7 +32,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <div
-        className="relative  flex items center justify-center  mb-5 h-[350px]
+        className="relative  flex items center justify-center  mb-5 h-[200px] w-[320px] sm:w-auto sm:h-[350px]
          shadow-xl shadow-gray-400 round-xl p-4 group hover:bg-gray-950 rounded-lg "
       >
         <div className="group-hover:blur-sm">
@@ -56,7 +56,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <div
-        className="relative  flex items center justify-center  mb-5 h-[350px]
+        className="relative  flex items center justify-center  mb-5 h-[200px] w-[320px] sm:w-auto sm:h-[350px]
          shadow-xl shadow-gray-400 round-xl p-4 group hover:bg-gray-950 rounded-lg "
       >
         <div className="group-hover:blur-sm">
@@ -80,7 +80,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <div
-        className="relative  flex items center justify-center  mb-5 h-[350px]
+        className="relative  flex items center justify-center  mb-5 h-[200px] w-[320px] sm:w-auto sm:h-[350px]
          shadow-xl shadow-gray-400 round-xl p-4 group hover:bg-gray-950 rounded-lg  "
       >
         <div className="group-hover:blur-sm ">

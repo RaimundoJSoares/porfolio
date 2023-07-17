@@ -1,8 +1,8 @@
 export default function FormContacts() {
   return (
     <form id="contact" className="flex items-center justify-center ">
-      <div className="flex items-center justify-center sm:w-[900px] sm:h-[620px] bg-gray-200  shadow-xl rounded-3xl">
-        <div className="max-w-[400px] sm:max-w-[450px] md:max-w-[700px]">
+      <div className="flex items-center justify-center w-[340px] sm:w-[900px] sm:h-[620px] bg-gray-200  shadow-xl rounded-3xl">
+        <div>
           <div className="flex items-center justify-center flex-wrap mb-8 font-semibold text-2xl">
             <h1>CONTACT</h1>
           </div>
