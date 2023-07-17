@@ -18,11 +18,11 @@ export default function AboutME() {
           <h1 className="font-bold text-2xl  leading-10 ">
             Raimundo Junior Soares
           </h1>
-          <span className=" leading-5  ">Front-end Developer</span>
-          <p className="mt-6 text-sm w-[300px]">
-            Working since 2019 as a developer, I am available for full-time or
-            freelance positions, as a Front-end or FullStack. Contact me and
-            lets talk.
+          <span className=" leading-5 text-lg ">Front-end Developer</span>
+          <p className="mt-6  w-[300px]">
+            Working since 2019 as developer, I am available for full-time or
+            freelance positions, as Front-end or FullStack.
+            <br /> Contact me and lets talk.
           </p>
         </div>
         <div className="mt-28 ">
