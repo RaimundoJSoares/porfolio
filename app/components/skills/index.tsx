@@ -1,6 +1,6 @@
 export default function SkillsPlay() {
   return (
-    <div className="flex flex-wrap gap-x-2 gap-y-3  mt-14 sm:mt-24 w-[400px] sm:max-w-full  mb-16 sm:mb-28 ">
+    <div className="flex flex-wrap gap-x-2 gap-y-3  mt-14 sm:mt-24 w-[700px] sm:max-w-full  mb-16 sm:mb-28 ">
       <span className="text-gray-200 bg-blue-600/80 text-lg hover:bg-blue-600 cursor-pointer py-1 px-3 rounded-lg  ">
         Next js
       </span>

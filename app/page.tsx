@@ -1,4 +1,4 @@
-import GetInTouch from './components/contact/GetinTouch'
+import GetInTouch from './components/getintouch/GetInTouch'
 import NavHeader from './components/header/navheader'
 import HeroSection from './components/pages/home/hero-section'
 import ProjectSection from './components/project/project-session'

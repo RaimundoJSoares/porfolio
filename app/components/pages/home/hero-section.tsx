@@ -4,7 +4,7 @@ import SkillsPlay from '../../skills'
 
 export default function HeroSection() {
   return (
-    <section className=" ">
+    <section className="">
       <div className=" flex items-center justify-center flex-wrap  ">
         <div className="font-extrabold max-w-[400px] sm:max-w-[450px] md:max-w-[700px]  ">
           <p className=" text-lg sm:text-xl md:text-2xl text-zinc-600 flex items-center ">
