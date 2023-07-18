@@ -25,9 +25,9 @@ export default function NavHeader() {
 
   return (
     <div
-      className={`z-10 md:scroll-auto scroll-smooth fixed  font-semibold w-full bg-gray-300 flex items-center justify-between h-24 ${
+      className={`z-10 scroll-smooth text-lg font-semibold w-full bg-gray-300 flex items-center justify-between h-10 sm:h-24 ${
         scrolled
-          ? ' z-10 md:scroll-auto scroll-smooth fixed  font-semibold w-full bg-gray-300 bg-opacity-70 mt-0 -ml-0.5 flex items-center justify-between h-24 backdrop-blur-sm shadow-xl shadow-gray-400 round-xl'
+          ? ' z-10 md:scroll-auto scroll-smooth sm:fixed  font-semibold w-full bg-gray-300 bg-opacity-70 mt-0 -ml-0.5 flex items-center justify-between h-24 backdrop-blur-sm shadow-xl shadow-gray-400 round-xl'
           : ''
       }`}
     >
