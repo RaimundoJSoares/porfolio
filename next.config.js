@@ -1,11 +1,20 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
+module.exports = {
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Credentials', value: 'true' },
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET,OPTIONS,POST' },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'X-PINGOTHER, Content-Type',
+          },
+        ],
+      },
+    ]
   },
-  images: {
-    domains: ['media.graphassets.com'],
-  },
-}
 
-module.exports = nextConfig
+  pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
+}

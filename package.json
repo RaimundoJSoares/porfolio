@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@graphcms/rich-text-react-renderer": "0.6.1",
+    "@heroicons/react": "^2.0.18",
     "@hookform/resolvers": "3.0.1",
     "@rocketseat/eslint-config": "1.2.0",
     "@types/node": "18.15.11",
@@ -23,6 +24,7 @@
     "eslint-config-next": "13.3.0",
     "framer-motion": "10.11.2",
     "next": "13.4.2",
+    "nodemailer": "^6.9.4",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -33,5 +35,8 @@
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4",
     "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.9"
   }
 }

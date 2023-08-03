@@ -53,6 +53,9 @@ export default function NavHeader() {
           <li className="hover:text-gray-600 ">
             <Link href="/#contact">Contact</Link>
           </li>
+          <li className="hover:text-gray-600 ">
+            <Link href="/#contact">Contact</Link>
+          </li>
         </ul>
       </nav>
     </div>

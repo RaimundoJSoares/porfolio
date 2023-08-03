@@ -1,5 +1,5 @@
 import AboutME from './about/Aboutme'
-import FormContacts from './contact/FormContacts'
+import FormContacts from '../contact/FormContacts'
 
 export default function GetInTouch() {
   return (

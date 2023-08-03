@@ -51,7 +51,7 @@ const ProjectSection = () => {
           <Image
             src="/images/chat.png"
             alt="Visualize"
-            className="rounded-xl sm:group-hover:opacity-10 sm:group-hover:blur-sm "
+            className="rounded-xl group-hover:opacity-10 sm:group-hover:blur-sm "
             fill
           />
         </div>
