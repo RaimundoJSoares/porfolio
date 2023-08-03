@@ -1,10 +1,13 @@
 import { NextResponse } from 'next/server'
+const dotenv = require('dotenv')
+dotenv.config()
 
 export async function POST(req: Request) {
   const body = await req.json()
   console.log(body)
 
   const nodemailer = require('nodemailer')
+
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
