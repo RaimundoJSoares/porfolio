@@ -124,8 +124,8 @@ export default function FormContacts() {
               type="submit"
               className={
                 submitted
-                  ? 'bg-green-200 rounded-xl p-5 flex items-center justify-center gap-5 text-green-600'
-                  : ' bg-green-500 mt-2 h-10 rounded-xl text-lg font-semibold text-gray-200 hover:bg-green-600 w-full delay-300 '
+                  ? 'bg-green-200 rounded-xl p-5 flex items-center justify-center gap-5 text-green-600 mb-2'
+                  : ' bg-green-500 mt-2 h-10 rounded-xl text-lg font-semibold text-gray-200 hover:bg-green-600 w-full delay-300 mb-2 '
               }
             >
               {submitted ? 'Successfully Submitted' : ' SEND MESSAGE'}
