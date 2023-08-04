@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-const dotenv = require('dotenv')
-dotenv.config()
+require('dotenv').config()
 
 export async function POST(req: Request) {
   const body = await req.json()
@@ -13,8 +12,8 @@ export async function POST(req: Request) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.GMAIL_USERNAME,
-      pass: process.env.GMAIL_PASSWORD,
+      user: process.env.NEXT_PUBLIC_GMAIL_USERNAME,
+      pass: process.env.NEXT_PUBLIC_GMAIL_PASSWORD,
     },
   })
 
