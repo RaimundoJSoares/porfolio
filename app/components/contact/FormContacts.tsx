@@ -50,11 +50,11 @@ export default function FormContacts() {
       id="contact"
       className="flex items-center justify-center "
     >
-      <div className="flex items-center justify-center w-[400px] sm:w-[900px] sm:h-[620px] bg-gray-200  shadow-xl rounded-3xl">
-        <div>
-          <div className="flex items-center justify-center flex-wrap mb-8 font-bold font-mono text-2xl">
+      <section className="flex items-center justify-center w-[400px] sm:w-[900px] sm:h-[620px] bg-gray-200 shadow-xl rounded-3xl">
+        <article>
+          <header className="flex items-center justify-center flex-wrap mb-8 font-bold font-mono text-2xl">
             <h1>CONTACT</h1>
-          </div>
+          </header>
           <div>
             <label className="font-semibold text-xl" htmlFor="name">
               Name
@@ -116,9 +116,9 @@ export default function FormContacts() {
               className="mb-2 pl-4 pt-4 w-full sm:w-[500px] h-[200px] rounded-md resize-none bg-zinc-100  outline-gray-500 text-zinc-800 text-xl font-sans "
             />
           </div>
-          <div
+          <footer
             className="flex items-center justify-center 
-          "
+      "
           >
             <button
               type="submit"
@@ -130,9 +130,9 @@ export default function FormContacts() {
             >
               {submitted ? 'Successfully Submitted' : ' SEND MESSAGE'}
             </button>
-          </div>
-        </div>
-      </div>
+          </footer>
+        </article>
+      </section>
     </form>
   )
 }
