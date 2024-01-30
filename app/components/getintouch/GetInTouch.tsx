@@ -5,9 +5,11 @@ export default function GetInTouch() {
   return (
     <div
       id="contact"
-      className=" flex items-center justify-center gap-6 mb-20 sm:flex-auto flex-wrap"
+      className=" flex items-center justify-center gap-4 mb-20 mr-10 ml-10 flex-wrap "
     >
       <AboutME />
+
+      <FormContacts />
     </div>
   )
 }

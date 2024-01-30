@@ -48,7 +48,7 @@ export default function NavHeader() {
             <Link href="/#projects">Projects</Link>
           </li>
           <li className="hover:text-gray-600 ">
-            <Link href="/#contact">Info</Link>
+            <Link href="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>

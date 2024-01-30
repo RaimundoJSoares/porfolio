@@ -1,9 +1,35 @@
 /* eslint-disable prefer-const */
 'use client'
 
+// eslint-disable-next-line import/no-duplicates
 import react from 'react'
+// eslint-disable-next-line import/no-duplicates
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function FormContacts() {
+  const form = useRef<HTMLFormElement>(null)
+
+  const sendEmail = (e: any) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_YOUR_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID!,
+        form.current!,
+        process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY!,
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        },
+      )
+  }
+
   const [name, setName] = react.useState('')
   const [email, setEmail] = react.useState('')
   const [subject, setSubject] = react.useState('')
@@ -45,14 +71,10 @@ export default function FormContacts() {
   }
 
   return (
-    <form
-      onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}
-      id="contact"
-      className="flex items-center justify-center "
-    >
-      <section className="flex items-center justify-center w-[400px] sm:w-[900px] sm:h-[620px] bg-gray-200 shadow-xl rounded-3xl">
+    <form ref={form} onSubmit={sendEmail} id="contact">
+      <section className="flex items-center justify-center w-[400px] sm:w-[800px] sm:h-[620px] bg-gray-200 shadow-xl rounded-3xl">
         <article>
-          <header className="flex items-center justify-center flex-wrap mb-8 font-bold font-mono text-2xl">
+          <header className="flex items-center justify-center mb-8 font-bold font-mono text-2xl">
             <h1>CONTACT</h1>
           </header>
           <div>
@@ -87,22 +109,6 @@ export default function FormContacts() {
               className="mb-6 flex items-center justify-center flex-wrap sm:w-[500px] h-12 rounded-lg pl-4 bg-zinc-100 outline-gray-500 text-zinc-800 text-xl font-sans"
             />
           </div>
-          <div>
-            <label className="font-semibold text-xl" htmlFor="subject">
-              Subject
-            </label>
-            <input
-              value={subject}
-              onChange={(e) => {
-                setSubject(e.target.value)
-              }}
-              type="text"
-              name="subject"
-              id="subject"
-              required
-              className="mb-6 flex items-center justify-center flex-wrap sm:w-[500px] h-12 rounded-lg pl-4 bg-zinc-100 outline-gray-500 text-zinc-800 text-xl font-sans"
-            />
-          </div>
           <div className="flex flex-wrap">
             <textarea
               id="message"
@@ -122,6 +128,7 @@ export default function FormContacts() {
           >
             <button
               type="submit"
+              value="Send"
               className={
                 submitted
                   ? 'bg-green-200 rounded-xl p-5 flex items-center justify-center gap-5 text-green-600 mb-2'
