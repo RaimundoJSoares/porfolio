@@ -4,33 +4,32 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function NavHeader() {
-  const [scrolled, setScrolled] = useState(false)
+
+  
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY
-      if (offset > 0) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div
-      className={`z-10 scroll-smooth text-lg font-semibold w-full bg-gray-300 flex items-center justify-between h-10 sm:h-24 ${
-        scrolled
-          ? ' z-10 md:scroll-auto scroll-smooth sm:fixed  font-semibold w-full bg-gray-300 bg-opacity-70 mt-0 -ml-0.5 flex items-center justify-between h-24 backdrop-blur-sm shadow-xl shadow-gray-400 round-xl'
-          : ''
-      }`}
-    >
+    className={`z-10 text-lg font-semibold w-full bg-gray-300 flex items-center justify-between h-10 sm:h-20 ${
+      scrolled
+        ? 'z-10 md:scroll-auto sm:fixed font-semibold bg-gray-300 bg-opacity-80 mt-0 -ml-0.5 flex items-center justify-between backdrop-blur-sm shadow-xl shadow-gray-400 round-xl'
+        : ''
+    }`}
+    style={{ scrollBehavior: 'smooth' }}
+  >
       <div className="nav-header-logo ml-4 sm:ml-10 flex justify-start">
         <Link href="/">
           <Image
@@ -51,10 +50,7 @@ export default function NavHeader() {
             <Link href="/#projects">Projects</Link>
           </li>
           <li className="hover:text-gray-600 ">
-            <Link href="/#contact">Contact</Link>
-          </li>
-          <li className="hover:text-gray-600 ">
-            <Link href="/#contact">Contact</Link>
+            <Link href="/#contact">Info</Link>
           </li>
         </ul>
       </nav>
