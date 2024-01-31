@@ -12,11 +12,11 @@ export default function HeroSection() {
           </p>
           <div className="flex items-center justify-center">
             <h1 className="text-6xl md:text-9xl sm:text-7xl text-zinc-800">
-              FRONTEND DEVELOPER
+              SOFTWARE ENGINEER
             </h1>
           </div>
           <p className="text-sm sm:text-base md:text-lg sm:ml-20 md:ml-60 text-zinc-600 mt-3 sm:mt-1">
-            I am a Frontend developer since 2019 working with professional
+            I am a Sotfware Engineer since 2019 working with professional
             Freelancer projects
           </p>
 

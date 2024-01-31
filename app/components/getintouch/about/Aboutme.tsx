@@ -20,7 +20,7 @@ export default function AboutME() {
             <h1 className="font-bold text-2xl leading-10">
               Raimundo Junior Soares
             </h1>
-            <span className="leading-5 text-lg">Front-end Developer</span>
+            <span className="leading-5 text-lg">Sotfware Engineer</span>
             <p className="mt-6 w-[300px]">
               Working since 2019 as a developer, I am available for full-time or
               freelance positions, as Front-end or FullStack.
