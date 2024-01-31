@@ -2,13 +2,18 @@
 'use client'
 
 // eslint-disable-next-line import/no-duplicates
-import react from 'react'
+import react, { useState } from 'react'
 // eslint-disable-next-line import/no-duplicates
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function FormContacts() {
   const form = useRef<HTMLFormElement>(null)
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
 
   const sendEmail = (e: any) => {
     e.preventDefault()
@@ -23,51 +28,16 @@ export default function FormContacts() {
       .then(
         (result) => {
           console.log(result.text)
+          setSubmitted(true)
+          // Limpar os campos do formulário
+          setName('')
+          setEmail('')
+          setMessage('')
         },
         (error) => {
           console.log(error.text)
         },
       )
-  }
-
-  const [name, setName] = react.useState('')
-  const [email, setEmail] = react.useState('')
-  const [subject, setSubject] = react.useState('')
-  const [message, setMessage] = react.useState('')
-  const [submitted, SetSubmitted] = react.useState(false)
-
-  const handleChangesAtTexts = (setState: any) => (event: any) => {
-    setState(event.target.value)
-  }
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-
-    if (submitted) {
-      return
-    }
-    setName('')
-    setEmail('')
-    setSubject('')
-    setMessage('')
-
-    SetSubmitted(true)
-    console.log(name, email, subject, message)
-
-    await fetch('/api/emailcontact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message,
-      }),
-    }).then((res) => {
-      if (res.status === 200) console.log('送信に成功しました')
-    })
   }
 
   return (
